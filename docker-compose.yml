@@ -1,0 +1,11 @@
+
+version:  '3'
+services:
+  jupyter:
+    image: jupyter/datascience-notebook:latest
+    container_name: jupyter
+    volumes:
+      - ./data:/home/jovyan/data
+    ports:
+      - 8888:8888
+    container_name:   jupyter_lab_ents
